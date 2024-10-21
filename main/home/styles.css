@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/********************** common ****************************/
+/* 상품정보 - 브랜드명(brand) 상품명(product) 가격(price(wrapper) discount-price(상품가격스타일)) */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  font-size: 18px;
+  color: #000;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.product_info {
+  width: 100%;
+  padding-left: 0.6rem;
+  padding-top: 0.5rem;
+}
+
+.icon-heart {
+  /* 다른 곳에서 쓰이니 common*/
+  display: block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  background: url(//static.wconcept.co.kr/web/images/wdna/icon-heart-white.png)
+    center no-repeat;
+  background-size: 100%;
+  margin-right: 0.5rem;
+}
+
+/******** color ********/
+.fc-bl {
+  color: #000 !important;
+}
+
+.fc-wh {
+  color: #fff !important;
+}
+
+/******** space *********/
+.top-pt10 {
+  padding-top: 3rem;
+}
+.main-pt10 {
+  padding-top: 5rem;
+}
+
+.main-pt15 {
+  padding-top: 13rem;
+}
+
+/******** button ********/
+.btn-outline-dark {
+  padding: 0.3rem 1rem;
+  font-weight: 600;
+}
+
+/********************** header ****************************/
+
+/********* banner  *********/
+.header-top-bannerBox {
+  width: 100%;
+  height: 4rem;
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+}
+
+/*********swiper******/
+
+.swiper {
+  width: 100%;
+  height: 3rem;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  padding-top: 0.5rem;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 내비 하위 카테고리(abosolute)  */
+.header_nav_subwrap {
+  top: 111px !important;
+}
+
+/********************** main ****************************/
+
+/********* main-top *********/
+
+.main-top-imgBox {
+  color: #000;
+}
+
+.main-top-imgBox img {
+  width: 100%;
+}
+
+.main-top-imgHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+.main-top-imgBox:hover .main-top-imgHover {
+  opacity: 1;
+}
+
+.main-top-textBox {
+  padding-top: 1rem;
+}
+
+.main-top-textBox p {
+  color: #a8a8a8;
+}
+
+/********* main-center1 *********/
+
+.main-center1-Text {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: black;
+}
+.main-center1-imgBox {
+  /* border: 1px solid red; */
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.8s ease-in;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.main-center1-imgBox img {
+  width: 100%;
+}
+
+.main-center1-imgBox:hover img {
+  transform: scale(1.2);
+}
+
+/********* main-center2 *********/
+.main-center2-imgS {
+  width: 100%;
+  height: 80%; /*뷰티섹션 오른 쪽 작은 박스들*/
+  object-fit: cover;
+}
+
+/* 상품가격,  공통으로 쓰인 요소들 있음. */
+.brand {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0 0 7px 0 !important;
+  font-weight: 600;
+  color: #333;
+}
+
+.product {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #888;
+}
+
+.price {
+  position: relative;
+  line-height: 30px;
+  font-size: 16px;
+  color: #333;
+}
+.discount_price {
+  /*그냥 프라이스도 만들어야 됨. */
+  font-size: 16px;
+  color: #333;
+  margin-right: 4px;
+}
+.base_price {
+  font-size: 12px;
+  color: #aaa;
+  text-decoration: line-through;
+}
+.discount_rate {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  color: #ff4000;
+}
+
+.general_info {
+  border: 1px solid #a8a8a8;
+  margin-bottom: 1px;
+  font-size: small;
+  color: #a8a8a8;
+  border-radius: 3px;
+}
+/* center3 캐러셀 남여섹션 */
+.main-listItem {
+  position: absolute;
+  width: 95%;
+  bottom: -20px;
+  left: 10px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding-left: 5px;
+}
+
+.productList:hover .main-listItem {
+  bottom: 0px;
+
+  opacity: 1;
+}
+
+/********* main-bottom *********/
+
+.main-bottom-banner {
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 0.3rem 0;
+  cursor: pointer;
+}
+
+.main-bottom-banner img {
+  width: 100%;
+}
+
+/** SNS 박스 **/
+
+.main-bottom-snsText {
+  width: 95%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  line-height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0.5rem !important;
+}
+
+.snsbox div {
+  padding: 0;
+}
+
+#sns img {
+  width: 95%;
+  aspect-ratio: 4/3.5;
+  object-fit: cover;
+}
+
+/** notice & news **/
+.main-bottom-noticeHead {
+  border-bottom: 2px solid #000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.notieMore {
+  color: #000;
+  font-size: 2rem;
+}
+
+#notice a {
+  text-decoration: none;
+  color: #333;
+  font-size: small;
+  position: relative;
+  display: block;
+  padding: 0.3rem 0;
+}
+#notice a > span {
+  position: absolute;
+  color: #888;
+  right: 0;
+  top: 0;
+}
+
+/************ media ****************/
+
+@media (max-width: 600px) {
+  html {
+    font-size: 13px !important;
+  }
+
+  .mainTop {
+    padding: 0 !important;
+  }
+
+  p {
+    font-size: 13px;
+  }
+
+  .main-pt20 {
+    padding-top: 5rem;
+  }
+
+  .main-pt15 {
+    padding-top: 5rem;
+  }
+
+  .beautyWrap {
+    padding: 0 !important;
+  }
+
+  .divide {
+    display: none;
+  }
+
+  .base_price {
+    display: none;
+  }
+
+  .labels {
+    display: none;
+  }
+
+  .productList {
+    margin-bottom: 1rem;
+  }
+
+  #notice {
+    display: none;
+  }
+
+  .snsbox div {
+    margin-bottom: 0.5rem;
+  }
+
+  .main-listItem {
+    opacity: 1;
+    bottom: 0px;
+  }
+
+  .listText {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  html {
+    font-size: 16px !important;
+  }
+  #notice span {
+    display: none;
+  }
+}
+
+/* 큰 화면(데스크탑) */
+@media (min-width: 1201px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+/* --------------------------------------------------------------- */
+
+.bb {
+  border: 1px solid red;
+}

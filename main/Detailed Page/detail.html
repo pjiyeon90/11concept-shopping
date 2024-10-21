@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상세페이지</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="../common/common.css">
+    <link rel="stylesheet" href="../Detailed Page/detail.css">
+    <link rel="stylesheet" href="../common/nav/navi.css">
+
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./js/banner.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- <script>
+        /* jQuery 시작 */
+        $(function(){ /*전체 메뉴에서 그 해당칸들이 슬라이드업데고 마우스 아웃하면 슬라이드 다운 되는*/
+            $('.header_nav_subwrap').hide();
+            $('.header_navmenu').mouseenter(function(){
+               $('.header_nav_subwrap').stop().slideDown('fast');
+            }).mouseout(function(){
+                 $('header_nav_subwrap').stop().slideUp('fast');
+            });
+        });
+         /* jQuery 종료 */
+        </script> -->
+
+
+  <!-- 내비 -->
+  <section>
+    <nav
+    class="navbar fixed-top navbar-expand-lg pt-5 pb-4"
+    style="background-color: white"
+    
+  >
+    <div class="container-fluid pt-2 pb-2">
+    
+      <a class="navbar-brand" href="/index.html"
+        ><img src="../common/nav/images/logo.png" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse ps-3"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav nav-underline me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">BEST</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="/main/category/man/man.html">WOMEN</a>
+            <div class="disappear">
+              <div class="header_nav_subwrap">
+                <ul>
+                  <li class="nav_subtitle"><a href="">의류</a></li>
+                  <li><a href="">ALL</a></li>
+                  <li><a href="">NEW</a></li>
+                  <li><a href="">EXLUSIVE</a></li>
+                  <li><a href="">상의</a></li>
+                  <li><a href="">바지</a></li>
+                  <li><a href="">원피스</a></li>
+                  <li><a href="">스커트</a></li>
+                  <li><a href="">점프수트</a></li>
+                  <li><a href="">셋업</a></li>
+                  <li><a href="">액티브웨어</a></li>
+                </ul>
+                <ul>
+                  <li class="nav_subtitle"><a href="">가방</a></li>
+                  <li><a href="">ALL</a></li>
+                  <li><a href="">NEW</a></li>
+                  <li><a href="">숄더백</a></li>
+                  <li><a href="">크로스백</a></li>
+                  <li><a href="">토트백</a></li>
+                  <li><a href="">에코,캔버스백</a></li>
+                  <li><a href="">백팩</a></li>
+                  <li><a href="">클러치</a></li>
+                  <li><a href="">파우치</a></li>
+                  <li><a href="">미니백</a></li>
+                </ul>
+                <ul>
+                  <li class="nav_subtitle"><a href="">신발</a></li>
+                  <li><a href="">ALL</a></li>
+                  <li><a href="">NEW</a></li>
+                  <li><a href="">해외브랜드</a></li>
+                  <li><a href="">EXLUSIVE</a></li>
+                  <li><a href="">스니커즈</a></li>
+                  <li><a href="">로퍼</a></li>
+                  <li><a href="">구두</a></li>
+                  <li><a href="">샌들</a></li>
+                </ul>
+                <ul>
+                  <li class="nav_subtitle">
+                    <a href="" class="accessory">액세서리</a>
+                  </li>
+                  <li><a href="">ALL</a></li>
+                  <li><a href="">NEW</a></li>
+                  <li><a href="">해외브랜드</a></li>
+                  <li><a href="">EXLUSIVE</a></li>
+                  <li><a href="">주얼리</a></li>
+                  <li><a href="">모자</a></li>
+                  <li><a href="">시계</a></li>
+                  <li><a href="">지갑,카드케이스</a></li>
+                  <li><a href="">아이웨어</a></li>
+                  <li><a href="">벨트</a></li>
+                </ul>
+                <ul class="nav_subtitle_img">
+                  <li><a style="opacity: 0">_</a></li>
+                  <li>
+                    <img
+                      src="https://img.29cm.co.kr//next-edition/2024/06/05/340786f3f37746dabce014eaf199e0f9_20240605162050.jpg?width=200"
+                      alt="여성옷"
+                    />
+                    <p>
+                      다채로운 색을 담은 팔렛의<br />
+                      여름
+                    </p>
+                    <a href="" class="nav_subtitle_img_view"
+                      >이벤트 전체보기</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/main/category/man/man.html">MEN</a>
+            <div class="disappear">
+              <div class="header_nav_subwrap">
+                <ul>
+                  <li class="nav_subtitle"><a href="">의류</a></li>
+                  <li><a href="">ALL</a></li>
+                  <li><a href="">NEW</a></li>
+                  <li><a href="">EXLUSIVE</a></li>
+                  <li><a href="">상의</a></li>
+                  <li><a href="">바지</a></li>
+                  <li><a href="">점프수트</a></li>
+                  <li><a href="">셋업</a></li>
+                  <li><a href="">액티브웨어</a></li>
+                </ul>
+                <ul>
+                  <li class="nav_subtitle"><a href="">가방</a></li>
+                  <li><a href="">ALL</a></li>
+                  <li><a href="">NEW</a></li>
+                  <li><a href="">숄더백</a></li>
+                  <li><a href="">크로스백</a></li>
+                  <li><a href="">토트백</a></li>
+                  <li><a href="">에코,캔버스백</a></li>
+                  <li><a href="">백팩</a></li>
+                  <li><a href="">클러치</a></li>
+                  <li><a href="">파우치</a></li>
+                  <li><a href="">미니백</a></li>
+                </ul>
+                <ul>
+                  <li class="nav_subtitle"><a href="">신발</a></li>
+                  <li><a href="">ALL</a></li>
+                  <li><a href="">NEW</a></li>
+                  <li><a href="">해외브랜드</a></li>
+                  <li><a href="">EXLUSIVE</a></li>
+                  <li><a href="">스니커즈</a></li>
+                  <li><a href="">로퍼</a></li>
+                  <li><a href="">구두</a></li>
+                  <li><a href="">샌들</a></li>
+                </ul>
+                <ul>
+                  <li class="nav_subtitle">
+                    <a href="" class="accessory">액세서리</a>
+                  </li>
+                  <li><a href="">ALL</a></li>
+                  <li><a href="">NEW</a></li>
+                  <li><a href="">해외브랜드</a></li>
+                  <li><a href="">EXLUSIVE</a></li>
+                  <li><a href="">주얼리</a></li>
+                  <li><a href="">모자</a></li>
+                  <li><a href="">시계</a></li>
+                  <li><a href="">지갑,카드케이스</a></li>
+                  <li><a href="">아이웨어</a></li>
+                  <li><a href="">벨트</a></li>
+                </ul>
+                <ul class="nav_subtitle_img">
+                  <li><a style="opacity: 0">_</a></li>
+                  <li>
+                    <img
+                      src="https://img.29cm.co.kr//next-edition/2024/06/03/c915d8423d274c99b88d034e5c3c3f76_20240603155303.jpg?width=200"
+                      alt="여성옷"
+                    />
+                    <p>GLOBAL BRAND</p>
+                    <a href="" class="nav_subtitle_img_view"
+                      >이벤트 전체보기</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/main/category/man/man.html">BEAUTY</a>
+            <div class="disappear">
+              <div class="header_nav_subwrap">
+                <ul>
+                  <li class="nav_subtitle"><a href="">뷰티></a></li>
+                  <li><a href="">ALL</a></li>
+                  <li><a href="">NEW</a></li>
+                  <li><a href="">EXLUSIVE</a></li>
+                  <li><a href="">선물세트</a></li>
+                  <li><a href="">스킨케어</a></li>
+                  <li><a href="">채식주의</a></li>
+                </ul>
+                <ul>
+                  <li><a style="opacity: 0">_</a></li>
+                  <li><a href="">바디케어</a></li>
+                  <li><a href="">헤어케어</a></li>
+                  <li><a href="">메이크업</a></li>
+                  <li><a href="">네일, 디자인타투</a></li>
+                  <li><a href="">향수</a></li>
+                  <li><a href="">여성용품</a></li>
+                </ul>
+
+                <ul class="nav_subtitle_img">
+                  <li><a style="opacity: 0">_</a></li>
+                  <li>
+                    <img
+                      src="https://amusemakeup.com/web/product/small/202405/654366eb960322024fe53436f6e6e2b5.jpg"
+                      alt=""
+                    />
+                    <p>원영이처럼 촉촉하게!</p>
+                    <a href="" class="nav_subtitle_img_view"
+                      >이벤트 전체보기</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/main/category/man/man.html">LIFE</a>
+            <div class="disappear">
+              <div class="header_nav_subwrap">
+                <ul>
+                  <li class="nav_subtitle">
+                    <a href="">가구,인테리어></a>
+                  </li>
+                  <li><a href="">ALL</a></li>
+                  <li><a href="">NEW</a></li>
+                  <li><a href="">EXLUSIVE</a></li>
+                  <li><a href="">비앤비이탈리아</a></li>
+                  <li><a href="">침구</a></li>
+                  <li><a href="">홈패브릭</a></li>
+                </ul>
+                <ul>
+                  <li><a style="opacity: 0">_</a></li>
+                  <li><a href="">가구 </a></li>
+                  <li><a href="">조명</a></li>
+                  <li><a href="">홈데코</a></li>
+                  <li><a href="">가드닝</a></li>
+                  <li><a href="">아트,디자인</a></li>
+                  <li><a href="">책,음반</a></li>
+                </ul>
+                <ul class="nav_subtitle_img">
+                  <li><a style="opacity: 0">_</a></li>
+                  <li>
+                    <img
+                      src="https://img.29cm.co.kr//next-edition/2023/05/16/842b72004f614f6bb81baf847e46b62f_20230516154226.jpg?width=200"
+                      alt=""
+                    />
+                    <p>모험가의 물건 라코스테</p>
+                    <a href="" class="nav_subtitle_img_view"
+                      >이벤트 전체보기</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <span class="pt-2 disappear">|</span>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/main/exclusive/exclusive.html">EXCLUSIVE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/main/exclusive/exclusive.html">PRE SHOW</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/main/event/event.html">EVENT</a>
+          </li>
+        </ul>
+        <ul class="d-flex nav_icon">
+          <li>
+            <a href="">
+              <img src="/main/common/nav/images/ico_join.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="">
+              <img src="/main/common/nav/images/ico_bag.svg" alt=""
+            /></a>
+          </li>
+
+          <li>
+            <a href="">
+              <img src="/main/common/nav/images/ico_login.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="">
+              <img src="/main/common/nav/images/ico_mypage.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </section>
+<!-- 내비끝 -->
+
+<!--상세페이지 시작-->
+<div class="content_allwrap pt-5">
+    <div class="content_top_wrap">
+        <div class="content_top_nav">
+            <span><a href="#" class="furniture">가구, 인테리어</a></span>
+            <span><a href="#" class="light">조명</a></span>
+            <span><a href="#">포터블 조명</a></span>
+        </div><!--content_top_nav-->
+    </div><!--content_top_wrap-->
+    <div class="content_top_second">
+        <div class="content_second_banner">
+            <ul>
+            <li><img src="https://img.29cm.co.kr/next-product/2022/02/04/9fa5b933177449219300424123231ff6_20220204182706.jpg?width=500" alt="조명 이미지">
+             <p></p></li>
+                </ul>
+            
+            </div><!--content_second_banner-->
+            <div class="content_second_right">
+                <div class="content_second_line">
+                <h3>LEXON 렉슨 MINA M사이즈 미나 무드등 조명 램프-LH64</h3>
+                    <p>하트</p></div>
+                <ul>
+                    <li><img src="./images/starclone.svg" alt="별다섯개"><a href="#" target="_blank">3637개 리뷰보기</a></li>
+                    <li class="second_row"><h5>90,000</h5><h3 class="red">20% <span>72,000원</span><a href="#" target="_blank" class="coupon">쿠폰받기</a></h3><p>720(1%)적립</p>
+                    </li>
+                    <li class="third_row"><h3>나의 구매 가능 가격</h3> <span>28%<strong>64,800원</strong></span></li>
+                    <li><h3>무이자 할부</h3><div class="discount"><p>최대 7개월 무이자 할부시 월10,285원 결제</p>
+                    <p class="discount_second">카드사별 할부 혜택 안내</p></div></li>
+                    <li><h3 class="delivery">배송 정보</h3><span>1일 이내 출고</span></p></p></li>
+                    <li><h3>배송비</h3><div class="deliveryfee"> <p>3,000원</p>
+                    <p>50,000원 이상 구매시 무료 배송</p>
+                    <p>제주/도서산간 3,000원 추가</p></div></li>
+                    <li><input type="text" placeholder="색상"></li>
+                    <li><button> 장바구니 담기</button><button>바로 구매하기</button></li>
+                </ul>
+            </div><!--content_second_right-->
+        </div><!--content_top_second-->
+        <ul class="tap_menu">
+            <li><a href="#">DETAIL</a></li>
+            <li><a href="#">REVIEW</a></li>
+            <li><a href="#">Q&A</a></li>
+            <li><a href="#">RETURN&DELIVERY</a></li>
+        </ul>
+        <div class="stockpage">
+            <img src="https://img.29cm.co.kr/next-product/2021/11/25/b332ef2e4aca402695a5e2ddedd79c75_20211125074942.gif?width=1000" alt="상품이미지">
+            <button> 상품 설명 더보기</button>
+        </div>
+        <div class="tableinfo">
+            <h3>상품정보 보기</h3>
+            <div class="tableimg"><img src="./images/table.png" alt="테이블표"></div>
+        </div><!--tableinfo-->
+        <div class="content_bottom_slide">
+            <h3>다른 고객이 함께 구매한 상품</h3>
+             <ul>
+                <li><img src="https://img.29cm.co.kr/next-product/2021/05/26/46c6b943487440f5911d7d47f113654e_20210526094614.jpg?width=300" alt="조명 이미지1"><h4>렉슨</h4><p class="comment">LEXON 렉슨 MINA L사이즈 미나 무드등 조명 램프-LH65</p>
+                <p class="basicprice">115,000</p>
+                <p class="disprice"><span>20%</span>105,000원</p></li>
+                <li><img src="https://img.29cm.co.kr/next-product/2022/02/04/9fa5b933177449219300424123231ff6_20220204182706.jpg?width=300" alt="조명 이미지2"><h4>렉슨</h4><p class="comment">LEXON 렉슨 MINA L사이즈 미나 무드등 조명 램프-LH65</p>
+                <p class="basicprice">115,000</p>
+                <p class="disprice"><span>20%</span>92,000원</p></li>
+                <li><img src="https://img.29cm.co.kr/next-product/2021/05/26/86d51d45277245abae07c979855fd8c6_20210526094533.jpg?width=300" alt="조명 이미지3"><h4>렉슨</h4><p class="comment">LEXON 렉슨 MINA L사이즈 미나 무드등 조명 램프-LH65</p>
+                <p class="basicprice">68,000</p>
+                <p class="disprice"><span>20%</span>45,000원</p></li>
+                <li><img src="https://img.29cm.co.kr/next-product/2021/10/05/bb4bd71676ed49cfbb9c4c48a7798138_20211005175149.jpg?width=300" alt="조명 이미지4"><h4>렉슨</h4><p class="comment">LEXON 렉슨 MINA L사이즈 미나 무드등 조명 램프-LH65</p>
+                <p class="basicprice">115,000</p>
+                <p class="disprice"><span>20%</span>92,000원</p></li>
+                <li><img src="https://img.29cm.co.kr/item/202405/11ef1738108231f7b9bbf9213d2fb668.jpg?width=300" alt="조명 이미지5"><h4>렉슨</h4><p class="comment">LEXON 렉슨 MINA L사이즈 미나 무드등 조명 램프-LH65</p>
+                <p class="basicprice">115,000</p>
+                <p class="disprice"><span>20%</span>132,000원</p></li>
+             </ul>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+             <br>
+            <div class="paging">
+                <strong><a href="" class="prev"><img src="./images/arrow-left.svg" alt="prev"/></a></strong>
+                <a href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">5</a>
+                <a href="">6</a>
+                <strong><a href="" class="next"><img src="./images/arrow-right.svg" alt="next"/></a></strong>
+              </div>
+        </div>
+</div><!--content_allwrap-->
+
+
+
+
+
+</div>
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"
+></script>
+</body>
+</html>

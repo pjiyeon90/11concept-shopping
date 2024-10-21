@@ -1,0 +1,118 @@
+.mgt-11 {
+  margin-top: 11rem;
+}
+.btn-dark {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.banner-imgBox {
+  margin-top: 6rem;
+  position: relative;
+}
+
+.banner-text {
+  width: 100%;
+  color: white;
+  position: absolute;
+
+  bottom: 20px;
+  text-align: center;
+}
+
+.ing-text2 {
+  padding-top: 40%;
+  /* border: 1px solid red; */
+}
+.pram {
+  padding: 0.3rem 0;
+  font-size: medium;
+}
+
+.devidedLine {
+  border-bottom: 3px solid black;
+  border-top: 3px solid black;
+  margin: 11rem 0;
+}
+
+.devidedLine h1 {
+  font-size: 5.3rem;
+}
+
+.headline {
+  font-size: 3.2rem;
+  padding-bottom: 1rem;
+}
+
+.exclusiveDisapper {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 13px !important;
+  }
+
+  .ing-text2 {
+    padding-top: 3rem;
+  }
+
+  .img3 {
+    margin: 3rem;
+  }
+
+  .exclusiveDisapper {
+    display: block;
+  }
+  .exclusiveText {
+    display: none;
+  }
+
+  .mgt-11 {
+    margin-top: 6rem;
+  }
+
+  .devidedLine {
+    margin: 6rem 0;
+  }
+
+  .main-bottom-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.main-bottom-imgBox {
+  height: 30rem;
+  background-color: black;
+  position: relative;
+}
+
+.main-bottom-imgBox button {
+  opacity: 0;
+}
+
+.main-bottom-imgBox:hover img {
+  display: none;
+}
+
+.main-bottom-imgBox:hover .main-bottom-textBox {
+  display: none;
+}
+
+.main-bottom-imgBox:hover button {
+  opacity: 1;
+}
+
+.main-bottom-textBox {
+  width: 100%;
+  color: #eee;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+}
+
+.bb {
+  border: 1px solid red;
+}

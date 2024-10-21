@@ -1,0 +1,154 @@
+/* CSS 초기화 */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 18px;
+  color: #000;
+  font-family: "campton", "Apple SD Gothic Neo", NanumBarunGothic,
+    "나눔바른고딕", Malgun Gothic, "맑은 고딕", dotum, sans-serif;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navbar {
+  padding: 0 1rem;
+}
+
+.header_nav_subwrap {
+  /* width: 100vw; */
+  width: 100%;
+  /* border: 1px solid red; */
+  position: absolute;
+  display: flex;
+
+  padding-bottom: 2rem;
+  justify-content: center;
+  z-index: 10;
+  background-color: white;
+  top: 102px;
+  left: 0;
+  /* visibility: visible; */
+  visibility: hidden;
+  opacity: 0.9;
+}
+
+.nav-item:hover .header_nav_subwrap {
+  visibility: visible;
+}
+.header_nav_subwrap:hover {
+  visibility: visible;
+}
+
+.nav_icon {
+  /* padding-right: 1rem; */
+}
+
+.nav_icon li {
+  padding: 0 0.5rem;
+}
+
+/* 로그인버튼 */
+.btn-outline-dark.login {
+  margin-top: 2rem;
+
+  padding: 0.4rem 10rem;
+  font-weight: 600;
+}
+
+/*드롭박스*/
+
+.header_nav_subwrap > ul {
+  width: 15%;
+}
+.header_nav_subwrap > ul > li > a {
+  display: block;
+  padding: 3px 0;
+  font-size: 16px;
+}
+.nav_subtitle {
+  font-size: 18px;
+  font-weight: bold;
+}
+.nav_subtitle > a {
+  background-image: url(../images/arrow.svg);
+  background-size: 7px;
+  background-repeat: no-repeat;
+  background-position: 40px 5px;
+}
+.nav_subtitle > a.accessory {
+  background-position: 68px 5px;
+}
+.nav_subtitle > a:hover {
+  color: navy;
+}
+.header_nav_subwrap > ul > li > a:hover {
+  font-weight: 700;
+}
+
+.nav_subtitle_img > li > p {
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 5px;
+  line-height: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.nav_subtitle_img > li > a.nav_subtitle_img_view {
+  display: block;
+  border: 1px solid rgb(202, 202, 202);
+  padding: 5px;
+  font-size: 13px;
+  background-image: url("../images/arrow.svg");
+  background-size: 6px;
+  background-repeat: no-repeat;
+  background-position: 140px;
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 14px !important;
+  }
+  .disappear {
+    display: none;
+  }
+
+  .d-flex {
+    justify-content: center;
+    padding-right: 1rem;
+  }
+  .navbar {
+    padding-top: 0.5rem !important;
+  }
+  .nav-item {
+    text-align: center;
+    /* margin-top: 1rem; */
+  }
+  .navbar-brand {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 16px !important;
+  }
+  .disappear {
+    display: none;
+  }
+}

@@ -1,0 +1,151 @@
+/* CSS 초기화 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{margin:0; padding: 0; box-sizing: border-box;}
+body{font-size: 18px; color: #000;
+font-family: 'campton', 'Apple SD Gothic Neo', NanumBarunGothic, '나눔바른고딕', Malgun Gothic, '맑은 고딕', dotum, sans-serif;}
+ul,li,ol{list-style: none;}
+img{width: 100%; height: 100%;}
+a{text-decoration: none; color: #000;}
+
+/*header*/
+
+.header_nav_wrap > nav{
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px 150px;
+    display: flex;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+.header_logo{
+    width:165px;
+   margin-right: 60px; 
+}
+.header_navmenu{
+    margin-right: 60px;
+}
+
+.header_navmenu > ul{
+    display: flex;
+    
+}
+/* .header_navmenu > ul >li{
+   
+   
+} */
+.header_navmenu > ul >li>a{
+    padding: 0 10px 5px;
+    font-size: 16px;
+}
+.header_navmenu > ul >li>a:hover{
+ padding-bottom: 26px;
+ border-bottom: 3px solid black;
+}
+.nav_icon > ul{
+    margin-top: -19px;
+    display: flex;
+}
+.nav_icon > ul >li{
+    width:28px;
+    margin-right: 22px;
+}
+.nav_icon > ul >li>a{
+    padding: 0 10px;
+    position: relative;
+}
+.nav_icon > ul >li>a>img{
+    width:100%;
+    height: 100%;
+}
+.nav_icon > ul >li>a> span{
+    font-size: 13px;
+    position:absolute;
+    top:10px;
+    left:8px;
+}
+.nav_icon > ul >li>a> span.icon_my
+{left:17px;}
+.nav_icon > ul >li>a> span.icon_basket
+{left:20px;}
+
+.nav_mobile{
+    display: none;
+    width:35px;
+}
+/*드롭박스*/
+.header_nav_subwrap{
+    display: flex;
+    margin: 20px 300px 0 555px;
+    z-index: 100;
+
+   
+     
+}
+.header_nav_subwrap>ul{
+    width:15%;
+}
+.header_nav_subwrap>ul>li>a{
+    display: block;
+    padding: 3px 0;
+    font-size: 16px;
+}
+.nav_subtitle{
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.nav_subtitle > a{
+    background-image: url(../images/arrow.svg);
+    background-size: 7px;
+    background-repeat: no-repeat;
+    background-position: 40px 5px;
+}
+.nav_subtitle > a.accessory{
+    background-position: 68px 5px;
+}
+.nav_subtitle > a:hover{
+    color: navy;
+}
+.header_nav_subwrap>ul>li>a:hover{
+    font-weight: 700;
+}
+
+.nav_subtitle_img > li > p{
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    line-height: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.nav_subtitle_img > li > a.nav_subtitle_img_view{
+    display: block;
+    border:1px solid rgb(202, 202, 202);
+    padding: 5px;
+    font-size: 13px;
+    background-image: url("../images/arrow.svg");
+    background-size: 6px;
+    background-repeat: no-repeat;
+    background-position: 140px;
+}
+
+/* 미디어쿼리*/
+@media all and (min-width: 360px) and (max-width: 1649px){
+ .nav_icon,.header_nav_subwrap{
+    display: none;
+ }
+ .nav_mobile{
+    display: block;
+ }
+}
+@media all and (max-width: 700px){
+
+}
+@media all and (max-width: 1480px){
+.header_navmenu{
+    display: none;}
+    .header_nav_wrap > nav{
+    padding: 20px 50px;
+    }
+}

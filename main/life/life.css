@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.btn-outline-light.life {
+  padding: 0.5rem 4rem;
+}
+
+.btn-outline-dark.life {
+  padding: 0.5rem 4rem;
+}
+
+/* 비디오부분 */
+.video-textBox {
+  color: white;
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+}
+
+.video-textBox h1 {
+  padding-bottom: 1rem;
+}
+
+/* 상품소개 박스 텍스트 */
+.introWrap {
+  margin: 2em 0;
+}
+
+.intro-innerWrap {
+  margin-left: 3.5em;
+}
+
+.intro-title {
+  font-size: 2.4em;
+  line-height: 1.7em;
+  text-align: left;
+}
+
+.intro-title span {
+  font-size: 1.7em;
+  line-height: 1em;
+  display: block;
+}
+
+.intro-subText {
+  width: 12em;
+  padding-top: 1em;
+  font-size: 1.125em;
+}
+
+/* main */
+
+.main-top-container {
+  width: 100%;
+  background-image: url("https://cdn-fsly.yottaa.net/62b4643a4f1bbf4e83e90207/o~f_webp/v~4b.51.0.0/https://www.ralphlauren.co.kr/on/demandware.static/-/Library-Sites-RalphLauren_EU_Library/ko_KR/v1717452508468/img/202402/20240207-kr-home-hub-refresh/0207_kr_home_hub_refresh_c02_bg.jpg");
+  background-size: cover;
+}
+
+.bath-text {
+  color: #333;
+  position: absolute;
+  bottom: 40%;
+  left: -700px;
+}
+
+.main-product-box {
+  position: relative;
+  overflow: hidden;
+
+  height: 32rem;
+}
+
+.main-product {
+  transition: transform 0.8s ease-in-out;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+.main-product-detail {
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  color: white;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.main-product-box:hover .main-product {
+  transform: scale(1.1);
+}
+
+.main-product-box:hover .main-product-detail {
+  opacity: 1;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+@keyframes slideIn {
+  from {
+    left: -750px;
+    opacity: 0;
+  }
+  to {
+    left: 100px;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    left: 100px;
+    opacity: 1;
+  }
+  to {
+    left: -750px;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .video-textBox {
+    margin-bottom: 1rem;
+  }
+  html {
+    font-size: 13px !important;
+  }
+
+  .introWrap {
+    margin-top: 0;
+  }
+  .product-box {
+    margin-bottom: 1rem;
+    pointer-events: none;
+  }
+
+  .bath-text {
+    animation: none;
+    left: 10px;
+    bottom: 4rem;
+    font-size: 10px;
+  }
+  .main-product-detail {
+    opacity: 1;
+  }
+}
+.bb {
+  border: 1px solid red;
+}

@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+  box-sizing: border-box;  
+}
+
+body{ 
+	font-size: 18px;
+	color: #000;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+ul,li,ol{
+	list-style: none;}
+
+img{
+	width: 100%;
+	height: 100%; 
+}
+
+a {
+	text-decoration: none;
+}
+
+
+
+
+
+.custom-fs-12{
+  font-size:12px;
+}
+
+.custom-fs-13{
+  font-size:13px;
+}
+
+.custom-fs-14{
+  font-size:14px;
+}
+
+.custom-fs-15{
+  font-size:15px;
+}
+
+.custom-fs-16{
+  font-size:16px;
+}
+
+.custom-fs-20{
+  font-size:20px;
+}
+
+
+.custom-text-gray{
+  color:rgb(102, 102, 102);
+}
+
+.custom-text-lightGray{
+  color:#ddd
+}
+
+
+
+.custom-bgColor-black{
+  background-color: #000;
+}
+
+.custom-bgColor-white{
+  background-color: white;
+}
+
+.custom-bgColor-khaki{
+  background-color: khaki;
+}
+
+.custom-bgColor-blue{
+  background-color: blue;
+}
+
+.custom-bgColor-green{
+  background-color: green;
+}
+
+.custom-bgColor-beige{
+  background-color: beige;
+}
+
+.custom-bgColor-ivory{
+  background-color: ivory;
+}
+
+.custom-bgColor-charcoal{
+  background-color: #4b4848;
+}
+
+.custom-bgColor-gray{
+  background-color: gray;
+}
+
+.custom-bgColor-navy{
+  background-color: navy;
+}
+
+.custom-bgColor-lightgray{
+  background-color: lightgray;
+}
+
+.custom-bgColor-pink{
+  background-color: pink;
+}
+
+.custom-bgColor-skyblue{
+  background-color: skyblue;
+}
+
+.custom-bgColor-brown{
+  background-color: brown;
+}

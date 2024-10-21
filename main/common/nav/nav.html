@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./nav.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        /* jQuery 시작 */
+        $(function(){ 
+            $('.header_nav_subwrap').hide();
+            $('.header_navmenu').mouseenter(function(){
+               $('.header_nav_subwrap').stop().slideDown('fast');
+            }).mouseout(function(){
+                 $('header_nav_subwrap').stop().slideUp('fast');
+            });
+        });
+         /* jQuery 종료 */
+    </script>
+
+
+   <div class="gnb">
+    <div class="header_nav_wrap">
+        <nav>
+        <div class="header_logo">
+        <h1 class="log"><a href="#" target="_blank"><img src="images/logo.png" alt="11컨셉로고"></a></h1>
+    </div>
+    <div class="header_navmenu">
+    <ul>
+        <li><a href="#">WOMEN</a></li>
+        <li><a href="#">MEN</a></li>
+        <li><a href="#">BEUTY</a></li>
+        <li><a href="#">LIFE</a></li>
+        <span>|</span>
+        <li><a href="#">BEST</a></li>
+        <li><a href="#">SALE</a></li>
+        <li><a href="#">NEW</a></li>
+        <li><a href="#">EXCLUSIVE</a></li>
+        <li><a href="#">PRE SHOW</a></li>
+        <li><a href="#">ORIGINAL</a></li>
+        <li><a href="#">브랜드</a></li>
+        <li><a href="#">기획전</a></li>
+    </ul>
+    </div><!--header_navmenu-->
+    <div class="nav_icon">
+        <ul>
+            <li><a href="#"><img src="./images/ico_join.svg" alt="회원가입" ><span>JOIN</span></a></li>
+            <li><a href="#"><img src="./images/ico_login.svg" alt="로그인"><span>LOGIN</span></a></li>
+            <li><a href="#"><img src="./images/ico_mypage.svg" alt="마이페이지"><span class="icon_my">MY</span></a></li>
+            <li><a href="#"><img src="./images/ico_bag.svg" alt="장바구니"><span class="icon_basket">1</span></a></li>
+        </ul>
+    </div>
+    <div class="nav_mobile"><img src="./images/menu-fill.svg" alt="모바일메뉴바"></div>
+    </nav>
+    <div class="header_nav_subwrap">
+        <ul>
+            <li class="nav_subtitle"><a href="">의류</a></li>
+            <li ><a href="">ALL</a></li>
+            <li ><a href="">NEW</a></li>
+            <li ><a href="">EXLUSIVE</a></li>
+            <li ><a href="">상의</a></li>
+            <li ><a href="">바지</a></li>
+            <li ><a href="">원피스</a></li>
+            <li ><a href="">스커트</a></li>
+            <li ><a href="">점프수트</a></li>
+            <li ><a href="">셋업</a></li>
+            <li ><a href="">액티브웨어</a></li>    
+        </ul>
+        <ul>
+            <li class="nav_subtitle"><a href="">가방</a></li>
+            <li ><a href="">ALL</a></li>
+            <li ><a href="">NEW</a></li>
+            <li ><a href="">숄더백</a></li>
+            <li ><a href="">크로스백</a></li>
+            <li ><a href="">토트백</a></li>
+            <li ><a href="">에코,캔버스백</a></li>
+            <li ><a href="">백팩</a></li>
+            <li ><a href="">클러치/a></li>
+            <li ><a href="">파우치</a></li>
+            <li ><a href="">미니백</a></li>    
+        </ul>
+        <ul>
+            <li class="nav_subtitle"><a href="">신발</a></li>
+            <li ><a href="">ALL</a></li>
+            <li ><a href="">NEW</a></li>
+            <li ><a href="">해외브랜드</a></li>
+            <li ><a href="">EXLUSIVE</a></li>
+            <li ><a href="">바지</a></li>
+            <li ><a href="">원피스</a></li>
+            <li ><a href="">스커트</a></li>
+            <li ><a href="">점프수트</a></li>
+            <li ><a href="">셋업</a></li>
+            <li ><a href=""></a></li>    
+        </ul>
+        <ul>
+            <li class="nav_subtitle"><a href="" class="accessory">액세서리</a></li>
+            <li ><a href="">ALL</a></li>
+            <li ><a href="">NEW</a></li>
+            <li ><a href="">해외브랜드</a></li>
+            <li ><a href="">EXLUSIVE</a></li>
+            <li ><a href="">주얼리</a></li>
+            <li ><a href="">모자</a></li>
+            <li ><a href="">시계</a></li>
+            <li ><a href="">지갑,카드케이스</a></li>
+            <li ><a href="">아이웨어</a></li>
+            <li ><a href="">벨트</a></li>    
+        </ul>
+        <ul class="nav_subtitle_img">
+            <li ><img src="./images/woman.jpg" alt="여성옷">
+                <p>다채로운 색을 담은 팔렛의<br> 여름</p>
+                <a href="" class="nav_subtitle_img_view">이벤트 전체보기</a></li>    
+        </ul>
+
+
+
+    </div>
+    </div><!--header_nav_wrap-->
+   </div><!--gnb-->
+    
+
+</body>
+</html>
